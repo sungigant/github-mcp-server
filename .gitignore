@@ -11,3 +11,19 @@ __debug_bin*
 
 # Go
 vendor
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# AI Models cache (downloaded models)
+demos/polish-ai-models/.cache/
+demos/polish-ai-models/models/

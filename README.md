@@ -669,6 +669,43 @@ export GITHUB_MCP_TOOL_ADD_ISSUE_COMMENT_DESCRIPTION="an alternative description
     - `prNumber`: Pull request number (string, required)
     - `path`: File or directory path (string, optional)
 
+## 🇵🇱 Polish AI Models Demo
+
+This repository includes demo scripts for running local AI models that support the Polish language. These demos provide alternatives to the Polish-Llama model and work entirely offline.
+
+### Available Models
+
+- **facebook/xglm-564M** (Recommended): Multilingual generative model with excellent Polish support
+- **allegro/herbert-base-cased**: Polish BERT model for text understanding tasks  
+- **GPT-2**: Basic generative model with limited Polish support
+
+### Quick Start
+
+```bash
+# Navigate to demos directory
+cd demos/polish-ai-models
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run interactive demo runner
+python3 run_all_demos.py
+
+# Or run individual demos
+python3 xglm_polish_demo.py        # Recommended for text generation
+python3 herbert_polish_demo.py     # Best for text understanding
+python3 gpt2_local_demo.py         # Basic option
+```
+
+### Features
+
+- ✅ **Fully Local**: No cloud dependencies, runs entirely on your machine
+- ✅ **Polish Language Support**: Specialized models for Polish text generation and understanding
+- ✅ **Multiple Options**: Choose from different models based on your needs
+- ✅ **Easy Setup**: Simple installation and usage with comprehensive documentation
+
+For detailed setup instructions and model comparisons, see [demos/polish-ai-models/README.md](demos/polish-ai-models/README.md).
+
 ## Library Usage
 
 The exported Go API of this module should currently be considered unstable, and subject to breaking changes. In the future, we may offer stability; please file an issue if there is a use case where this would be valuable.
