@@ -55,7 +55,7 @@ def main():
                     num_return_sequences=1,
                     temperature=0.8,
                     do_sample=True,
-                    pad_token_id=tokenizer.eos_token_id,
+                    pad_token_id=tokenizer.pad_token_id,
                     repetition_penalty=1.1
                 )
             
